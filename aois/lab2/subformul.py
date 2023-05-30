@@ -218,3 +218,16 @@ def get_info():
     for el in range(len(answer)):
         print(el+1, pseudo[el], answer[el], sep='\t')
     print('')
+    buf: str = ''.join(map(str, answer[-1]))
+    result: int = int(buf, 2)
+    print("Индексная форма: ",  result)
+    temp1 = '&('
+    temp2 = 'v('
+    for el1 in range(len(answer[el])):
+        if answer[el][el1] == 0:
+            temp1 += str(el1) + ', '
+        elif answer[el][el1] == 1:
+            temp2 += str(el1) + ', '
+    temp = temp1[:-2] + ') = ' + temp2[:-2] + ')'
+    print("Числовая форма: ", temp)
+
