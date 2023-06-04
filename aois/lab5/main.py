@@ -1,0 +1,15 @@
+import func
+
+func.plusone()
+func.print_q()
+func.make_h()
+func.print_h()
+print('h3')
+func.fun(func.h3)
+print('')
+print('h2')
+func.fun(func.h2)
+print('')
+print('h1')
+func.fun(func.h1)
+print('')
